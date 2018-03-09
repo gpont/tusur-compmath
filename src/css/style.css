@@ -65,6 +65,10 @@ ul.tabs li {
     position: relative;
 }
 
+ul.tabs li:last-child {
+    border-right: 1px solid #333;
+}
+
 ul.tabs li:hover {
     background-color: #ccc;
     color: #333;
