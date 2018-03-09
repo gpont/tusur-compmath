@@ -1,0 +1,22 @@
+{
+  "name": "tusur_compmath",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpont/TUSUR_CompMath.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gpont/TUSUR_CompMath/issues"
+  },
+  "homepage": "https://github.com/gpont/TUSUR_CompMath#readme",
+  "devDependencies": {
+    "webpack": "^4.1.1"
+  }
+}
