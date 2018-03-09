@@ -1,5 +1,8 @@
 import Euler from './euler';
 import TabsManager from './tabs';
 
-new TabsManager();
-new Euler();
+const tabsManager = new TabsManager();
+const euler = new Euler();
+
+tabsManager();
+euler();
