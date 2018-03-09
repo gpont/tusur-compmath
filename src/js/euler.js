@@ -1,14 +1,12 @@
-import $ from 'jquery';
-
 export default class Euler {
     constructor() {
-        $(document).ready(() => {
-            $("#calc").click(() => {
-                let x0 = parseFloat($("#input_x0").val());
-                let xn = parseFloat($("#input_xn").val());
-                let n = parseFloat($("#input_n").val());
-                let f = eval($("#input_f").val());
-                $("#output").innerText = Euler.calc(x0, xn, n, f);
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector("#euler_calc").addEventListener("click", () => {
+                let x0 = parseFloat(document.querySelector("#euler_input_x0").value);
+                let xn = parseFloat(document.querySelector("#euler_input_xn").value);
+                let n = parseFloat(document.querySelector("#euler_input_n").value);
+                let f = eval(document.querySelector("#euler_input_f").value);
+                document.querySelector("#euler_output pre").innerText = Euler.calc(x0, xn, n, f);
             });
         });
     }

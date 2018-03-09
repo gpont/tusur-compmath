@@ -26,8 +26,5 @@
     "browser-sync-webpack-plugin": "^2.0.1",
     "copy-webpack-plugin": "^4.5.1",
     "browser-sync": "^2.23.6"
-  },
-  "dependencies": {
-    "jquery": "^3.3.1"
   }
 }
