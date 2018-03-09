@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Computation Math</title>
+    <script src="js/euler.js"></script>
+    <script src="js/tabs.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<ul class="tabs">
+    <li class="active" rel="tab1">Euler Method</li>
+    <li rel="tab2">Tab 2</li>
+    <li rel="tab3">Tab 3</li>
+    <li rel="tab4">Tab 4</li>
+</ul>
+<div class="tab_container">
+    <div id="tab1" class="tab_content">
+        <div class="content">
+            <label for="input_f">Input f: </label><input id="input_f" value="x => 2*x"/><br/>
+            <label for="input_x0">Input x0: </label><input id="input_x0" value="0"/><br/>
+            <label for="input_xn">Input xn:</label><input id="input_xn" value="5"/><br/>
+            <label for="input_n">Input n:</label><input id="input_n" value="10"/><br/>
+            <button id="calc">Calculate</button>
+        </div>
+        <div class="output">
+            <pre id="output"></pre>
+        </div>
+    </div>
+    <div id="tab2" class="tab_content">
+    </div>
+    <div id="tab3" class="tab_content">
+    </div>
+    <div id="tab4" class="tab_content">
+    </div>
+</div>
+
+</body>
+</html>
