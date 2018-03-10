@@ -3,5 +3,9 @@
 		"document": true,
 		"window": true
 	},
-	"extends": "airbnb-base"
+	"extends": "airbnb-base",
+	"rules": {
+		"no-mixed-operators": 0,
+		"no-plusplus": 0
+	}
 }
