@@ -6,7 +6,6 @@
 	"extends": "airbnb-base",
 	"rules": {
 		"no-mixed-operators": 0,
-		"no-plusplus": 0,
-		"no-eval": 0
+		"no-plusplus": 0
 	}
 }
