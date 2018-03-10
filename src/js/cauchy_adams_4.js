@@ -15,7 +15,6 @@ class CauchyAdams4 {
       // eslint-disable-next-line no-eval
       const f = eval(document.querySelector('#cauchy_adams_4_f').value);
       document.querySelector('#cauchy_output pre').innerText = CauchyAdams4.calc(x0, xn, n, f);
-      return false;
     });
     form.querySelector('button[type="button"]').addEventListener('click', () => {
       document.querySelector('#cauchy_output pre').innerText = '';
