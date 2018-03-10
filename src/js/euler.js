@@ -1,14 +1,24 @@
 export default class Euler {
   constructor() {
     document.addEventListener('DOMContentLoaded', () => {
-      document.querySelector('#euler_calc').addEventListener('click', () => {
-        const x0 = parseFloat(document.querySelector('#euler_input_x0').value);
-        const xn = parseFloat(document.querySelector('#euler_input_xn').value);
-        const n = parseFloat(document.querySelector('#euler_input_n').value);
-        // eslint-disable-next-line no-eval
-        const f = eval(document.querySelector('#euler_input_f').value);
-        document.querySelector('#euler_output pre').innerText = Euler.calc(x0, xn, n, f);
-      });
+      Euler.page(document.querySelector('#tab1 form'));
+    });
+  }
+
+  static page(form) {
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const x0 = parseFloat(document.querySelector('#euler_input_x0').value);
+      const xn = parseFloat(document.querySelector('#euler_input_xn').value);
+      const n = parseFloat(document.querySelector('#euler_input_n').value);
+      // eslint-disable-next-line no-eval
+      const f = eval(document.querySelector('#euler_input_f').value);
+      document.querySelector('#euler_output pre').innerText = Euler.calc(x0, xn, n, f);
+      return false;
+    });
+    form.querySelector('button[type="button"]').addEventListener('click', () => {
+      document.querySelector('#euler_output pre').innerText = '';
     });
   }
 
