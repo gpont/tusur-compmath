@@ -7,8 +7,8 @@ input[type='text'], input[type='number'] {
     font-family: monospace;
 }
 
-.label-column {
-    margin: 0.5rem 0;
+.column-label {
+    margin: 0 0 0.75rem 0;
 
     font-size: 1.25rem;
     font-weight: bold;
@@ -31,7 +31,7 @@ form label {
 }
 
 .tab-content {
-    padding: 0.7rem;
+    padding: 1rem;
 }
 
 .output {
@@ -46,6 +46,7 @@ form label {
 ul.tabs {
     margin: 0;
     padding: 0;
+    padding-top: 3px;
     list-style: none;
     width: 100%;
     display: flex;
@@ -56,34 +57,33 @@ ul.tabs li {
     margin: 0;
     flex: 1;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     align-content: stretch;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
 
     border-top: 1px solid #ddd;
-    background-color: #c1c1c1;
+    border-left: 1px solid #ddd;
+    background-color: #eeeeee;
 
     color: #6c6d6c;
     font-size: 0.8rem;
 }
 
 ul.tabs li:first-child {
-    border-radius: 0.5rem 0 0 0;
-    border-left: 1px solid #ddd;
 }
 
 ul.tabs li:last-child {
     border-right: 1px solid #ddd;
-    border-radius: 0 0.5rem 0 0;
-}
-
-ul.tabs li:hover {
-    background-color: #ccc;
-    color: #ddd;
 }
 
 ul.tabs li.active {
+    margin-top: -3px;
     background-color: #fff;
+    border-top: 3px solid orange;
+
     color: #000;
 }
 
