@@ -13,7 +13,7 @@
         <li class="active" rel="euler">Euler Method</li>
         <li rel="int-left-rect">Integral Left Rectangle</li>
         <li rel="newton-polynomial">Newton Polynomial</li>
-        <li rel="tab4">Tab 4</li>
+        <li rel="lagrange-polynomial">Lagrange Polynomial</li>
     </ul>
     <div class="tab-container">
         <div id="euler" class="tab-content active">
@@ -83,7 +83,24 @@
             </form>
             <div class="output"><pre></pre></div>
         </div>
-        <div id="tab4" class="tab-content">
+        <div id="lagrange-polynomial" class="tab-content">
+            <form>
+                <div class="input-line">
+                    <label>x</label>
+                    <input value="7" type="number"/>
+                </div>
+                <div class="input-line">
+                    <label>X values</label>
+                    <input value="1,2,3,4,5,6" type="text"/>
+                </div>
+                <div class="input-line">
+                    <label>Y values</label>
+                    <input value="1,4,9,16,25,36" type="text"/>
+                </div>
+                <button type="submit">Calculate</button>
+                <button type="button">Clear</button>
+            </form>
+            <div class="output"><pre></pre></div>
         </div>
     </div>
 </div>
