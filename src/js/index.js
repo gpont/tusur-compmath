@@ -1,6 +1,6 @@
 import Euler from './euler';
 import TabsManager from './tabs';
-import CauchyAdams4 from './cauchy_adams_4';
+import CauchyAdams4 from './IntLeftRectangle';
 import NewtonPolinomial from './NewtonPolynomial';
 
 new TabsManager();
