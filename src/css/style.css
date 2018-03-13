@@ -103,7 +103,6 @@ ul.tabs li.active:before {
 .tab-container {
     border: 1px solid #dddddd;
     border-top: none;
-    border-radius: 0 0 0.5rem 0.5rem;
 
     background: #fff;
 }
