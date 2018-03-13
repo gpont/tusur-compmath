@@ -1,25 +1,8 @@
-export default class Euler {
+import BaseForm from './baseform';
+
+export default class Euler extends BaseForm {
   constructor() {
-    document.addEventListener('DOMContentLoaded', () => {
-      Euler.page(document.querySelector('#tab1 form'));
-    });
-  }
-
-  static page(form) {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-
-      const x0 = parseFloat(document.querySelector('#euler_input_x0').value);
-      const xn = parseFloat(document.querySelector('#euler_input_xn').value);
-      const n = parseFloat(document.querySelector('#euler_input_n').value);
-      // eslint-disable-next-line no-eval
-      const f = eval(document.querySelector('#euler_input_f').value);
-      document.querySelector('#euler_output pre').innerText = Euler.calc(x0, xn, n, f);
-      return false;
-    });
-    form.querySelector('button[type="button"]').addEventListener('click', () => {
-      document.querySelector('#euler_output pre').innerText = '';
-    });
+    super('euler');
   }
 
   static nextY(xi, yi, h, f) {
@@ -30,7 +13,7 @@ export default class Euler {
     return num.toString().padEnd(5).substring(0, 5);
   }
 
-  static calc(x0, xn, n, f) {
+  calc(x0, xn, n, f) {
     let outString = '';
     const h = (xn - x0) / n;
     let x = x0;

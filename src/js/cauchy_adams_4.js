@@ -1,28 +1,11 @@
-class CauchyAdams4 {
+import BaseForm from './baseform';
+
+class CauchyAdams4 extends BaseForm {
   constructor() {
-    document.addEventListener('DOMContentLoaded', () => {
-      CauchyAdams4.page(document.querySelector('#tab2 form'));
-    });
+    super('cauchy-adams-4');
   }
 
-  static page(form) {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-
-      const x0 = parseFloat(document.querySelector('#cauchy_adams_4_x0').value);
-      const xn = parseFloat(document.querySelector('#cauchy_adams_4_xn').value);
-      const n = parseFloat(document.querySelector('#cauchy_adams_4_n').value);
-      // eslint-disable-next-line no-eval
-      const f = eval(document.querySelector('#cauchy_adams_4_f').value);
-      document.querySelector('#cauchy_output pre').innerText = CauchyAdams4.calc(x0, xn, n, f);
-      return false;
-    });
-    form.querySelector('button[type="button"]').addEventListener('click', () => {
-      document.querySelector('#cauchy_output pre').innerText = '';
-    });
-  }
-
-  static calc(a, b, n, f) {
+  calc(a, b, n, f) {
     const h = (b - a) / n;
 
     let res = 0;

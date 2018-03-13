@@ -10,61 +10,61 @@
 
 <div class="content-wrapper">
     <ul class="tabs">
-        <li class="active" rel="tab1">Euler Method</li>
-        <li rel="tab2">Cauchy-Adams Method</li>
-        <li rel="tab3">Tab 3</li>
+        <li class="active" rel="euler">Euler Method</li>
+        <li rel="cauchy-adams-4">Cauchy-Adams Method</li>
+        <li rel="newton-polynomial">Newton Polynomial</li>
         <li rel="tab4">Tab 4</li>
     </ul>
     <div class="tab-container">
-        <div id="tab1" class="tab-content active">
+        <div id="euler" class="tab-content active">
             <form>
                 <div class="input-line">
-                    <label for="euler_input_f">Функция </label>
-                    <input id="euler_input_f" value="x => 2*x" type="text"/>
+                    <label>Функция </label>
+                    <input value="x => 2*x" type="text"/>
                 </div>
                 <div class="input-line">
-                    <label for="euler_input_x0">x0</label>
-                    <input id="euler_input_x0" value="0" type="number"/>
+                    <label>x0</label>
+                    <input value="0" type="number"/>
                 </div>
                 <div class="input-line">
-                    <label for="euler_input_xn">xn</label>
-                    <input id="euler_input_xn" value="5" type="number"/>
+                    <label>xn</label>
+                    <input value="5" type="number"/>
                 </div>
                 <div class="input-line">
-                    <label for="euler_input_n">n</label>
-                    <input id="euler_input_n" value="10" type="number"/>
+                    <label>n</label>
+                    <input value="10" type="number"/>
                 </div>
                 <button type="submit">Calculate</button>
                 <button type="button">Clear</button>
             </form>
-            <div class="output" id="euler_output"><pre></pre></div>
+            <div class="output"><pre></pre></div>
         </div>
 
-        <div id="tab2" class="tab-content">
+        <div id="cauchy-adams-4" class="tab-content">
             <form>
                 <div class="input-line">
-                    <label for="cauchy_adams_4_f">Функция</label>
-                    <input id="cauchy_adams_4_f" value="x => Math.exp(x)/x" type="text">
+                    <label>Функция</label>
+                    <input value="x => Math.exp(x)/x" type="text">
                 </div>
                 <div class="input-line">
-                    <label for="cauchy_adams_4_x0">x0</label>
-                    <input id="cauchy_adams_4_x0" value="0" type="number">
+                    <label>x0</label>
+                    <input value="0" type="number">
                 </div>
                 <div class="input-line">
-                    <label for="cauchy_adams_4_xn">xn</label>
-                    <input id="cauchy_adams_4_xn" value="5" type="number">
+                    <label>xn</label>
+                    <input value="5" type="number">
                 </div>
                 <div class="input-line">
-                    <label for="cauchy_adams_4_n">n</label>
-                    <input id="cauchy_adams_4_n" value="10" type="number">
+                    <label>n</label>
+                    <input value="10" type="number">
                 </div>
                 <button type="submit">Calculate</button>
                 <button type="button">Clear</button>
             </form>
-            <div class="output" id="cauchy_output"><pre></pre></div>
+            <div class="output"><pre></pre></div>
         </div>
 
-        <div id="tab3" class="tab-content">
+        <div id="newton-polynomial" class="tab-content">
         </div>
         <div id="tab4" class="tab-content">
         </div>
