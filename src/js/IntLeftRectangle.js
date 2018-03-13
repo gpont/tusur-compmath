@@ -2,7 +2,7 @@ import BaseForm from './baseform';
 
 class IntLeftRectangle extends BaseForm {
   constructor() {
-    super('cauchy-adams-4');
+    super('int-left-rect');
   }
 
   calc(a, b, n, f) {
