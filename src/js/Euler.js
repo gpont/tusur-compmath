@@ -1,4 +1,4 @@
-import BaseForm from './baseform';
+import BaseForm from './BaseForm';
 
 export default class Euler extends BaseForm {
   constructor() {

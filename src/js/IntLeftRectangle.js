@@ -1,4 +1,4 @@
-import BaseForm from './baseform';
+import BaseForm from './BaseForm';
 
 class IntLeftRectangle extends BaseForm {
   constructor() {
