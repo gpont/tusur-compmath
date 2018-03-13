@@ -12,6 +12,7 @@
     <ul class="tabs">
         <li class="active" rel="euler">Euler Method</li>
         <li rel="int-left-rect">Integral Left Rectangle</li>
+        <li rel="int-mid-rect">Integral Middle Rectangle</li>
         <li rel="newton-polynomial">Newton Polynomial</li>
         <li rel="tab4">Tab 4</li>
     </ul>
@@ -62,6 +63,31 @@
                 <button type="button">Clear</button>
             </form>
             <div class="output"><pre></pre></div>
+        </div>
+
+        <div id="int-mid-rect" class="tab-content">
+            <form>
+                <div class="input-line">
+                    <label>Функция</label>
+                    <input value="x => Math.exp(x)/x" type="text">
+                </div>
+                <div class="input-line">
+                    <label>x0</label>
+                    <input value="0" type="number">
+                </div>
+                <div class="input-line">
+                    <label>xn</label>
+                    <input value="5" type="number">
+                </div>
+                <div class="input-line">
+                    <label>n</label>
+                    <input value="10" type="number">
+                </div>
+                <button type="submit">Calculate</button>
+                <button type="button">Clear</button>
+            </form>
+            <div class="output"><pre></pre></div>
+            </form>
         </div>
 
         <div id="newton-polynomial" class="tab-content">
