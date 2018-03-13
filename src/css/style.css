@@ -1,15 +1,21 @@
 body {
     font-family: Arial, serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 input[type='text'], input[type='number'] {
-    font-size: 15px;
     font-family: monospace;
 }
 
+.label-column {
+    margin: 0.5rem 0;
+
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
 .input-line {
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .content-wrapper {
@@ -18,77 +24,79 @@ input[type='text'], input[type='number'] {
 }
 
 form label {
-    width: 70px;
-    margin-bottom: 5px;
+    width: 5rem;
     display: inline-block;
+
+    text-align: right;
 }
 
 .tab-content {
-    padding: 10px;
+    padding: 0.7rem;
 }
 
 .output {
-    margin: 0 40px;
+    margin-left: 1rem;
 }
 
 .output pre {
-    border: #000 1px solid;
-    background-color: #ccc;
-    border-radius: 10px;
-    padding: 5px;
+    margin: 0;
 }
 
 /* Tabs */
 ul.tabs {
     margin: 0;
     padding: 0;
-    float: left;
     list-style: none;
-    height: 32px;
-    border-bottom: 1px solid #333;
     width: 100%;
+    display: flex;
+    overflow: auto;
 }
 
 ul.tabs li {
-    float: left;
     margin: 0;
+    flex: 1;
+    display: flex;
+    align-content: stretch;
     cursor: pointer;
-    padding: 0 21px;
-    height: 31px;
-    line-height: 31px;
-    border-top: 1px solid #333;
-    border-left: 1px solid #333;
-    border-bottom: 1px solid #333;
-    background-color: #666;
-    color: #ccc;
-    overflow: hidden;
-    position: relative;
+    padding: 0.25rem 0.5rem;
+
+    border-top: 1px solid #ddd;
+    background-color: #c1c1c1;
+
+    color: #6c6d6c;
+    font-size: 0.8rem;
+}
+
+ul.tabs li:first-child {
+    border-radius: 0.5rem 0 0 0;
+    border-left: 1px solid #ddd;
 }
 
 ul.tabs li:last-child {
-    border-right: 1px solid #333;
+    border-right: 1px solid #ddd;
+    border-radius: 0 0.5rem 0 0;
 }
 
 ul.tabs li:hover {
     background-color: #ccc;
-    color: #333;
+    color: #ddd;
 }
 
 ul.tabs li.active {
     background-color: #fff;
-    color: #333;
-    border-bottom: 1px solid #fff;
-    display: block;
+    color: #000;
 }
 
 .tab-container {
-    border: 1px solid #333;
+    border: 1px solid #dddddd;
     border-top: none;
-    clear: both;
-    float: left;
-    width: 100%;
+    border-radius: 0 0 0.5rem 0.5rem;
+
     background: #fff;
-    overflow: auto;
+}
+
+.tab-content {
+    display: flex;
 }
 
 .tab-content:not(.active) {
