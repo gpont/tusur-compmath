@@ -1,6 +1,6 @@
 import BaseForm from './BaseForm';
 
-export default class Euler extends BaseForm {
+class Euler extends BaseForm {
   constructor() {
     super('euler');
   }
@@ -14,13 +14,15 @@ export default class Euler extends BaseForm {
   }
 
   calc(x0, xn, n, f) {
-    let outString = '';
     const h = (xn - x0) / n;
-    let x = x0;
-    while (x < xn) {
+
+    let outString = '';
+
+    for (let x = x0; x < xn; x += h) {
       outString += `${Euler.cut(x)} ${Euler.cut(Euler.nextY(x, f(x), h, f))}\n`;
-      x += h;
     }
     return outString;
   }
 }
+
+export default Euler;

@@ -1,4 +1,4 @@
-export default class TabsManager {
+class TabsManager {
   constructor() {
     document.addEventListener('DOMContentLoaded', this.setEvents.bind(this));
   }
@@ -15,3 +15,5 @@ export default class TabsManager {
     document.querySelector(`#${el.getAttribute('rel')}`).classList.add('active');
   }
 }
+
+export default TabsManager;
