@@ -3,9 +3,11 @@ import TabsManager from './TabsManager';
 import CauchyAdams4 from './IntLeftRectangle';
 import NewtonPolinomial from './NewtonPolynomial';
 import LagrangePolinomial from './LagrangePolynomial';
+import IntMiddleRectangle from './IntMiddleRectangle';
 
 new TabsManager();
 new Euler();
 new CauchyAdams4();
 new NewtonPolinomial();
 new LagrangePolinomial();
+new IntMiddleRectangle();
