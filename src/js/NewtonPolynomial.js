@@ -33,7 +33,7 @@ export default class NewtonPolynomial extends BaseForm {
       }
 
       for (let k = 0; k < i; ++k) {
-        F *= xValues - xValues[k];
+        F *= x - xValues[k];
       }
       res += F;
     }
