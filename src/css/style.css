@@ -51,7 +51,6 @@ ul.tabs {
     width: 100%;
     display: flex;
     overflow: auto;
-    box-sizing: border-box;
 }
 
 ul.tabs li {
@@ -64,6 +63,7 @@ ul.tabs li {
     align-content: stretch;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
+    box-sizing: border-box;
 
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -82,12 +82,22 @@ ul.tabs li:last-child {
 }
 
 ul.tabs li.active {
-    margin-top: -3px;
+    position: relative;
     background-color: #fff;
-    border-top: 3px solid orange;
-    border-bottom: none;
+    border-bottom: 1px solid #fff;
 
     color: #000;
+}
+
+ul.tabs li.active:before {
+    margin-top: -0.2rem;
+    top: 0;
+    left: -1px;
+    right: -1px;
+    position: absolute;
+    height: 0.2rem;
+    content: ' ';
+    background-color: orange;
 }
 
 .tab-container {
