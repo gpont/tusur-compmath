@@ -1,6 +1,6 @@
 import BaseForm from './BaseForm';
 
-export default class NewtonPolinomial extends BaseForm {
+export default class NewtonPolynomial extends BaseForm {
   constructor() {
     super('newton-polynomial');
   }
@@ -15,19 +15,28 @@ export default class NewtonPolinomial extends BaseForm {
   }
 
   calc(x, xValues, yValues) {
-    let lagrangePol = 0;
+    let res = yValues[0];
 
-    for (let i = 0; i < xValues.length; ++i) {
-      let basicsPol = 1;
-      for (let j = 0; j < xValues.length; ++j) {
-        if (j !== i) {
-          basicsPol *= (x - xValues[j]) / (xValues[i] - xValues[j]);
+    for (let i = 1; i < xValues.length; ++i) {
+      let F = 0;
+
+      for (let j = 0; j <= i; ++j) {
+        let den = 1;
+
+        for (let k = 0; k <= i; ++k) {
+          if (k !== j) {
+            den *= xValues[j] - xValues[k];
+          }
         }
+
+        F += yValues[j] / den;
       }
 
-      lagrangePol += basicsPol * yValues[i];
+      for (let k = 0; k < i; ++k) {
+        F *= xValues - xValues[k];
+      }
+      res += F;
     }
-
-    return lagrangePol;
+    return res;
   }
 }
