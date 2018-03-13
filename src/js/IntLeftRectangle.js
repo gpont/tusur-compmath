@@ -1,6 +1,6 @@
 import BaseForm from './baseform';
 
-class CauchyAdams4 extends BaseForm {
+class IntLeftRectangle extends BaseForm {
   constructor() {
     super('cauchy-adams-4');
   }
@@ -21,4 +21,4 @@ class CauchyAdams4 extends BaseForm {
   }
 }
 
-export default CauchyAdams4;
+export default IntLeftRectangle;
