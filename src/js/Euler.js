@@ -1,6 +1,6 @@
 import BaseForm from './BaseForm';
 
-export default class Euler extends BaseForm {
+class Euler extends BaseForm {
   constructor() {
     super('euler');
   }
@@ -24,3 +24,5 @@ export default class Euler extends BaseForm {
     return outString;
   }
 }
+
+export default Euler;

@@ -1,6 +1,6 @@
 import BaseForm from './BaseForm';
 
-export default class NewtonPolynomial extends BaseForm {
+class NewtonPolynomial extends BaseForm {
   constructor() {
     super('newton-polynomial');
   }
@@ -40,3 +40,5 @@ export default class NewtonPolynomial extends BaseForm {
     return res;
   }
 }
+
+export default NewtonPolynomial;

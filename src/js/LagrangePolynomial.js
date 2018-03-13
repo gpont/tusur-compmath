@@ -1,6 +1,6 @@
 import BaseForm from './BaseForm';
 
-export default class LagrangePolynomial extends BaseForm {
+class LagrangePolynomial extends BaseForm {
   constructor() {
     super('lagrange-polynomial');
   }
@@ -31,3 +31,5 @@ export default class LagrangePolynomial extends BaseForm {
     return lagrangePol;
   }
 }
+
+export default LagrangePolynomial;
