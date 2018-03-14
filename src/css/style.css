@@ -5,12 +5,17 @@ body {
 
 input[type='text'], input[type='number'] {
     font-family: monospace;
+    font-size: 0.8rem;
+}
+
+form label {
+    font-size: 0.8rem;
 }
 
 .column-label {
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 1rem 0;
 
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: bold;
 }
 
@@ -113,4 +118,8 @@ ul.tabs li.active:before {
 
 .tab-content:not(.active) {
     display: none;
+}
+
+.form-buttons {
+    margin-top: 1rem;
 }
