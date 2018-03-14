@@ -1,10 +1,6 @@
 import BaseForm from './BaseForm';
 
 class IntLeftRectangle extends BaseForm {
-  constructor() {
-    super('int-left-rect');
-  }
-
   calc(a, b, n, f) {
     const h = (b - a) / n;
 
