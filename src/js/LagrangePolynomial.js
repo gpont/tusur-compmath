@@ -1,10 +1,6 @@
 import BaseForm from './BaseForm';
 
 class LagrangePolynomial extends BaseForm {
-  constructor() {
-    super('lagrange-polynomial');
-  }
-
   getInputs(formName) {
     const inputElements = document.querySelectorAll(`#${formName} form input`);
     return [

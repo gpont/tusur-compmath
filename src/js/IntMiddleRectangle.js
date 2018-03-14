@@ -1,10 +1,6 @@
 import BaseForm from './BaseForm';
 
 class IntMiddleRectangle extends BaseForm {
-  constructor() {
-    super('int-mid-rect');
-  }
-
   calc(x0, xn, n, f) {
     const h = (xn - x0) / n;
 

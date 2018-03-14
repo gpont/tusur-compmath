@@ -1,10 +1,6 @@
 import BaseForm from './BaseForm';
 
 class Euler extends BaseForm {
-  constructor() {
-    super('euler');
-  }
-
   static nextY(xi, yi, h, f) {
     return yi + (h * f(xi + (h / 2), yi + ((h / 2) * f(xi, yi))));
   }

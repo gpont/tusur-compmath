@@ -1,10 +1,6 @@
 import BaseForm from './BaseForm';
 
 class NewtonPolynomial extends BaseForm {
-  constructor() {
-    super('newton-polynomial');
-  }
-
   getInputs(formName) {
     const inputElements = document.querySelectorAll(`#${formName} form input`);
     return [

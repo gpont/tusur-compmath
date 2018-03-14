@@ -15,6 +15,7 @@
         <li rel="int-mid-rect">Метод серединных прямоугольников</li>
         <li rel="newton-polynomial">Полином Ньютона</li>
         <li rel="lagrange-polynomial">Полином Лагранжа</li>
+        <li rel="linear-system">Система линейных алгебраических уравнений</li>
     </ul>
     <div class="tab-container">
         <div id="euler" class="tab-content active">
@@ -112,7 +113,7 @@
                 <div class="column-label">Ввод</div>
                 <div class="input-line">
                     <label>x</label>
-                    <input value="7" type="number"/>
+                    <input value="7" type="number" step="any"/>
                 </div>
                 <div class="input-line">
                     <label>X values</label>
@@ -138,7 +139,7 @@
                 <div class="column-label">Ввод</div>
                 <div class="input-line">
                     <label>x</label>
-                    <input value="7" type="number"/>
+                    <input value="7" type="number" step="any"/>
                 </div>
                 <div class="input-line">
                     <label>X values</label>
@@ -152,6 +153,26 @@
                     <button type="submit">Вычислить</button>
                     <button type="button">Очистить</button>
                 </div>
+            </form>
+            <div class="output">
+                <div class="column-label">Вывод</div>
+                <pre></pre>
+            </div>
+        </div>
+
+        <div id="linear-system" class="tab-content">
+            <form>
+                <div class="column-label">Ввод</div>
+                <div class="input-line">
+                    <label>Введите систему</label>
+                    <textarea>
+                        1,1,1
+                        1,1,1
+                        1,1,1
+                    </textarea>
+                </div>
+                <button type="submit">Вычислить</button>
+                <button type="button">Очистить</button>
             </form>
             <div class="output">
                 <div class="column-label">Вывод</div>
