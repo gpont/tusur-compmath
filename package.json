@@ -1,5 +1,5 @@
 {
-  "name": "tusur_compmath",
+  "name": "tusur-compmath",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gpont/TUSUR_CompMath.git"
+    "url": "git+https://github.com/gpont/tusur-compmath.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gpont/TUSUR_CompMath/issues"
+    "url": "https://github.com/gpont/tusur-compmath/issues"
   },
-  "homepage": "https://github.com/gpont/TUSUR_CompMath#readme",
+  "homepage": "https://github.com/gpont/tusur-compmath#readme",
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "browser-sync-webpack-plugin": "^2.2.2",
