@@ -1,6 +1,6 @@
 # TUSUR Computational Mathematics labs
 
-Tusur University, Correspondence And Evening Faculty, 2 year, 2 semester, Computational Mathematics
+Tomsk State University of Control Systems and Radio-electronics, Correspondence And Evening Faculty, 2 year, 2 semester, Computational Mathematics
 
 ## Tasks
 
