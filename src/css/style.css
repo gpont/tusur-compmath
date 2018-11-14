@@ -1,4 +1,6 @@
 body {
+    background-color: #eeeeee;
+
     font-family: Arial, serif;
     font-size: 14px;
 }
@@ -73,7 +75,6 @@ ul.tabs li {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     border-left: 1px solid #ddd;
-    background-color: #eeeeee;
 
     color: #6c6d6c;
     font-size: 0.8rem;
@@ -112,7 +113,11 @@ ul.tabs li.active:before {
     background: #fff;
 }
 
-.tab-content {
+.tab-container .description {
+    padding: 1rem 0;
+}
+
+.tab-content .calc {
     display: flex;
 }
 

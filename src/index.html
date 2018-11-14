@@ -19,32 +19,36 @@
     </ul>
     <div class="tab-container">
         <div id="euler" class="tab-content active">
-            <form>
-                <div class="column-label">Ввод</div>
-                <div class="input-line">
-                    <label>Функция </label>
-                    <input value="x => 2*x" type="text"/>
+            <div class="description">Put tab description in here.</div>
+
+            <div class="calc">
+                <form>
+                    <div class="column-label">Ввод</div>
+                    <div class="input-line">
+                        <label>Функция </label>
+                        <input value="x => 2*x" type="text"/>
+                    </div>
+                    <div class="input-line">
+                        <label>x0</label>
+                        <input value="0" type="number"/>
+                    </div>
+                    <div class="input-line">
+                        <label>xn</label>
+                        <input value="5" type="number"/>
+                    </div>
+                    <div class="input-line">
+                        <label>n</label>
+                        <input value="10" type="number"/>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit">Вычислить</button>
+                        <button type="button">Очистить</button>
+                    </div>
+                </form>
+                <div class="output">
+                    <div class="column-label">Вывод</div>
+                    <pre></pre>
                 </div>
-                <div class="input-line">
-                    <label>x0</label>
-                    <input value="0" type="number"/>
-                </div>
-                <div class="input-line">
-                    <label>xn</label>
-                    <input value="5" type="number"/>
-                </div>
-                <div class="input-line">
-                    <label>n</label>
-                    <input value="10" type="number"/>
-                </div>
-                <div class="form-buttons">
-                    <button type="submit">Вычислить</button>
-                    <button type="button">Очистить</button>
-                </div>
-            </form>
-            <div class="output">
-                <div class="column-label">Вывод</div>
-                <pre></pre>
             </div>
         </div>
 
