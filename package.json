@@ -1,5 +1,5 @@
 {
-  "name": "tusur_compmath",
+  "name": "tusur-compmath",
   "private": true,
   "version": "1.0.0",
   "description": "",
@@ -11,24 +11,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gpont/TUSUR_CompMath.git"
+    "url": "git+https://github.com/gpont/tusur-compmath.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gpont/TUSUR_CompMath/issues"
+    "url": "https://github.com/gpont/tusur-compmath/issues"
   },
-  "homepage": "https://github.com/gpont/TUSUR_CompMath#readme",
+  "homepage": "https://github.com/gpont/tusur-compmath#readme",
   "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
     "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
-    "webpack": "^4.1.1",
-    "webpack-cli": "^2.0.10",
     "html-webpack-plugin": "^3.0.6",
-    "clean-webpack-plugin": "^0.1.19",
-    "browser-sync-webpack-plugin": "^2.0.1",
-    "copy-webpack-plugin": "^4.5.1",
-    "browser-sync": "^2.23.6"
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.6"
   }
 }
