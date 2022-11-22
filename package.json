@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/gpont/tusur-compmath#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.27.10",
     "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.1",
